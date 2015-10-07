@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Dump Friends List</title>
+    <title>Dump Friends IDs</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css">
@@ -50,7 +50,7 @@
 	<li>
 		<a href="/index">Home</a>
 	</li>
-	<li>
+	<!-- <li>
 		<a href="/page1">Link1</a>
 	</li>
 	<li>
@@ -58,6 +58,31 @@
 	</li>
 	<li>
 		<a href="/page3">Link3</a>
+	</li>
+	-->
+	<li class="">
+		<a href="#">Ontology<span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse">
+			<li>
+				<a href="http://onto.openspinoza.org/carontology">Car</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/datasc">Data science</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/lifestyle">Lifestyle</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/politicianontology">Politician</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/newspapersontology">Newspaper</a>
+			</li>
+				<li>
+				<a href="http://onto.openspinoza.org/sportsteamsontology">Sports team</a>
+			</li>
+		</ul>
+		<!-- /.nav-second-level -->
 	</li>
 	<li class="">
 		<a href="#">Twitter Swiss Army<span class="fa arrow"></span></a>
@@ -89,7 +114,7 @@
 <div id="page-wrapper" style="min-height: 389px;">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Dump Friends List</h1>
+			<h1 class="page-header">Dump Friends IDs</h1>
 		</div>
 		<!-- /.col-lg-12 -->
 	</div>
@@ -98,13 +123,13 @@
 		 <div class="main_contents">
 			<div class="main_heading">
 				<div class="quicklinks">
-					<a href="/tsak/commands">Commands</a> | <a href="/tsak/dumpfriends"> Dump Friends List</a>
+					<a href="/tsak/commands">Commands</a> | <a href="/tsak/dumpfriends"> Dump Friends IDs</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="dumpfriends">Dump Friends List</a>
+					<li><a href="dumpfriends">Dump Friends IDs</a>
 
 						<ul class="maincntnts">
 							<li><a href="#1">Dump by Twitter Screen Name</a></li>
@@ -124,7 +149,7 @@
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o friends.csv
 						</code>
 					</div>
 
@@ -136,7 +161,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o friends.csv
 						</code>
 					</div>
 					
@@ -144,16 +169,16 @@
 						<h4>Arguments:</h4>
 
 						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-uname:</h4>
-						<p>Target User Twitter ScreenName.</p>
+						<p>Target User's Twitter ScreenName.</p>
 
 						<h4>-o:</h4>
-						<p>Name of the output file to which the target user follower will be dumped.</p>
+						<p>Name of the output file to which the target user's friends will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, screen name, followers count, and friends count to the provided output file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits.</p>
+						<p>This command dumps a valid twitter user's friends IDs, screen name, followers count, and friends count to the given output file. The number of friends IDs are subjected to Twitter rate limits.</p>
 					
 					</div>
 
@@ -166,7 +191,7 @@
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uid 101010111 -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o friends.csv
 						</code>
 					</div>
 
@@ -178,13 +203,13 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uid 101010111 -o output.csv
+							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o friends.csv
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
 						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-uid:</h4>
 						<p>Target User's Twitter ID.</p>
@@ -193,7 +218,7 @@
 						<p>Name of the output file to which the target user follower will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, screen name, followers count, and friends count to the provided output file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits.</p>
+						<p>This command dumps a valid twitter user's friends IDs, screen name, followers count, and friends count to the given output file. The number of friends IDs are subjected to Twitter rate limits.</p>
 					</div>
 
 
@@ -210,6 +235,7 @@
 	
 </div>
  
+
 	<!-- /#page-wrapper -->
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
  <div class="footer">Copyright &copy; 2015</div>

@@ -50,7 +50,7 @@
 	<li>
 		<a href="/index">Home</a>
 	</li>
-	<li>
+	<!-- <li>
 		<a href="/page1">Link1</a>
 	</li>
 	<li>
@@ -58,6 +58,31 @@
 	</li>
 	<li>
 		<a href="/page3">Link3</a>
+	</li>
+	-->
+	<li class="">
+		<a href="#">Ontology<span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse">
+			<li>
+				<a href="http://onto.openspinoza.org/carontology">Car</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/datasc">Data science</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/lifestyle">Lifestyle</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/politicianontology">Politician</a>
+			</li>
+			<li>
+				<a href="http://onto.openspinoza.org/newspapersontology">Newspaper</a>
+			</li>
+				<li>
+				<a href="http://onto.openspinoza.org/sportsteamsontology">Sports team</a>
+			</li>
+		</ul>
+		<!-- /.nav-second-level -->
 	</li>
 	<li class="">
 		<a href="#">Twitter Swiss Army<span class="fa arrow"></span></a>
@@ -105,7 +130,7 @@
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpPlaceTrends -woeid 010101 -o output.txt
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpPlaceTrends -woeid 010101 -o trends.txt
 						</code>
 					</div>
 
@@ -117,7 +142,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpPlaceTrends -woeid 010101 -o output.txt
+							java -jar TSAK.jar tsak dumpPlaceTrends -woeid 010101 -o trends.txt
 						</code>
 					</div>
 					
@@ -125,16 +150,16 @@
 						<h4>Arguments:</h4>
 
 						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-woeid :</h4>
 						<p>The Yahoo! Where On Earth ID of the location.</p>
 
 						<h4>-o:</h4>
-						<p>Name of the output file to which the result trends will be dumped.</p>
+						<p>Name of output file to which the trends will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>This command dumps the top 10 trending topics for a specific WOEID to the given output file, if trending information is available for it.</p>
+						<p>This command dumps top 10 trending topics for the specific WOEID to the given output file, if trending information is available for it.</p>
 					
 					</div>
               </div>
@@ -143,6 +168,7 @@
 	
 </div>
  
+
 	<!-- /#page-wrapper -->
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
  <div class="footer">Copyright &copy; 2015</div>

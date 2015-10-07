@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Example Tutorial</title>
+    <title>Get Own Retweets</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css">
@@ -114,18 +114,59 @@
 <div id="page-wrapper" style="min-height: 389px;">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Example Tutorial</h1>
+			<h1 class="page-header">Get Own Retweets</h1>
 		</div>
 		<!-- /.col-lg-12 -->
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-			<p>Coming Soon...</p>
+		 <div class="main_heading">
+				<div class="quicklinks">
+					<a href="/tsak/commands">Commands</a> | <a href="/tsak/get-own-tweets"> Get Own Retweets</a>
+				</div>
+					<div class="ftns_desp code_decp">
+						<h4>LONG FORMAT</h4>
+						<p>Reads Twitter credentials directly from command line arguments.</p>
+					</div>
+					<div class="ftns_def">
+						<code>
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpOwnRetweets -o OwnRetweets.csv
+						</code>
+					</div>
+
+					<div class="ftns_desp code_decp">
+						<h4>SHORT FORMAT</h4>
+						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
+					</div>
+
+					<div class="ftns_def">
+						
+						<code>
+							java -jar TSAK.jar tsak dumpOwnRetweets -o OwnRetweets.csv
+						</code>
+					</div>
+					
+					<div class="ftns_desp">
+						<h4>Arguments:</h4>
+
+						<h4>XXXX:</h4>
+						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
+
+						<h4>-o:</h4>
+						<p>Name of the output file to which the own Tweets will be dumped.</p>
+
+						<h4>Description:</h4>
+						<p>Based on provided credentials, this command dumps retweets of the authenticated user to a file. The number of dumped retweets are subjected to Twitter rate limits.</p>
+					
+					</div>
+
+				</div>
 		</div>
 	</div>
 	
 </div>
  
+
 	<!-- /#page-wrapper -->
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
  <div class="footer">Copyright &copy; 2015</div>
