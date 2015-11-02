@@ -1,0 +1,101 @@
+---
+layout: word-crowd
+title: Setup
+---
+<div role="navigation" class="navbar-default sidebar">
+  <div class="sidebar-nav navbar-collapse">
+   {% include left-sidebar.html %}
+  </div>
+                <!-- /.sidebar-collapse -->
+</div>
+            <!-- /.navbar-static-side -->
+</nav>
+<div id="page-wrapper" style="min-height: 389px;">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">{{page.title}}</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-12 page-setup">
+		    <p>Please follow the below steps.</p>
+			<div class="step1">
+			 <strong>Step 1:</strong>
+             <p>Download zip file of WordCrowd.<br>
+			 <b>OR</b><br>
+			 Clone it using the following command.
+             <p><code>git clone https://github.com/project-spinoza/WordCrowd.git</code></p>
+			 </p>
+			</div>
+			<div class="step2">
+			 <strong>Step 2:</strong>
+             <p> Navigate to the examples directory and run the index.html file in web browser.</p>
+			</div>
+			<div class="step3">
+			 <strong>Step 3:</strong>
+			 <p>Running WordCrowd</p>
+             <p>
+				<code>var settings = {</code><br>
+					   <code>"container":"body",</code><br>
+					   <code>"data":"Input text data for visualization"</code><br>
+					 <code>};</code>
+				<br>
+				<code>var wordCrowd = new WordCrowd(settings);</code>
+			</p>
+			</div>
+			<div class="step4">
+			 <strong>Step 4:</strong>
+             <p>There are some default settings for WordCrowd but they can be modify as follows.</p>
+			 <ul>
+				<li><b>container</b>
+				<p>Selector of the wordCrowd container element</p>
+				<p>default value  <code>body</code></p>
+				<p><code>container :  "#wordCrowdContainer"</code></p></li>
+				<li><b>data</b>
+				<p>The input text from which WordCrowd generates graph.</p>
+				<p>default value  <code>Input text data for visualization</code></p>
+				<p><code>data:  "Input text data for visualization"</code></p></li>
+				<li><b>width</b>
+				<p>Width of WordCrowd container.</p>
+				<p>default value  <code>800</code></p>
+				<p><code>width:800</code></p></li>
+				<li><b>height</b>
+				<p>Height of WordCrowd container.</p>
+				<p>default value  <code>600</code></p>
+				<p><code>height:600</code></p></li>
+				<li><b>background :"white" </b>
+				<p>Background color of WordCrowd container.</p>
+				<p>default value <code>"white"</code></p>
+				<p><code>background :"white"</code> </p></li>
+				<li><b>fontsize_range</b>
+				<p>The sizes of words. words of higher frequency get maximum font-size and lower frequency get minimum font-size. </p>
+				<p>default value <code>{ min : 20, max : 80 }</code></p>
+				<p><code>fontsize_range : { min : 20, max : 80 }</code> </p></li>
+				<li><b>hover_color</b>
+				<p>Mouse hover color of words in Wordcrowd.</p>
+				<p>default value <code>"grey"</code></p>
+				<p><code>hover_color :"grey"</code> </p></li>
+				<li><b>colors</b>
+				<p>Words color. 'random' refers to a function that randomly give colors to words.</p>
+				<p>default value <code>"random"</code></p>
+				<p><code>colors:"random"</code> </p></li>
+				<li><b>max_tries</b>
+				<p>Maximum number of replace tries of a word to avoid collision.</p>
+				<p>default value <code>700</code></p>
+				<p><code>max_tries:700</code> </p></li>
+				<li><b>angles</b> 
+				<p>Array of angles to which words rotates. angles should be between 0 and 360.</p>
+				<p>default value <code>[0,90]</code></p>
+				<p><code>angles : [0,90]</code></p></li>
+				<li><b>font_families</b>
+				<p>Array of font families which will assign to words randomly.</p>
+				<p>default value <code>[ "Arial Bold Italic", "Verdana", "Helvetica" ," Monaco", "monospace"]</code></p>
+				<p><code>font_families:[ "Arial Bold Italic", "Verdana", "Helvetica" ," Monaco", "monospace"]</code></p></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+ 
