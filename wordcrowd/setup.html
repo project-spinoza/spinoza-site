@@ -19,38 +19,33 @@ title: Setup
 	</div>
 	<div class="row">
 		<div class="col-lg-12 page-setup">
+		    <h2>WordCrowd</h2>
+			<p>WordCrowd is a javaScript implementation of WordCram.</p>
 			<div class="step1">
-			 <strong>1 Creating new Twitter App:</strong>
-			 <p><b>1.1</b> Click on "Create New App" button at <a href="https://apps.twitter.com">apps.twitter.com</a> as shown below.</p>
-			 <img src="{{site.baseurl}}/assets/images/setup-1.jpg">
+			 <strong>Step 1:</strong>
+             <p>Download zip file of WordCrowd.<br>
+			 <b> OR </b>
+			 <p>Clone it using the following command. </p>
+             <p><code>git clone https://github.com/project-spinoza/WordCrowd.git</code></p>
+			 </p>
 			</div>
 			<div class="step2">
-			 <p><b>1.2</b> Fill out the form by giving your App name, Description of your App, complete url address of your website and Call-back url 
-			 which is optional. As shown in figure.</p>
-			 <img src="{{site.baseurl}}/assets/images/setup-2.jpg">
+			 <strong>Step 2:</strong>
+             <p> Navigate to the examples directory and run the index.html file in web browser.</p>
 			</div>
 			<div class="step3">
-			 <p><b>1.3</b> check term and conditions checkbox and click on "Create your Twitter Application" button.</p>
-			 <img src="{{site.baseurl}}/assets/images/setup-3.jpg">
+			 <strong>Step 3:</strong>
+			 <b>Running WordCrowd</b>
+             <p><b>Running WordCrowd</b><br><br>
+				<code>var settings = {</code><br>
+					   <code>"container":"body",</code><br>
+					   <code>"data":"Input text data for visualization"</code><br>
+					 <code>};</code>
+				<br>
+				<code>var wordCrowd = new WordCrowd(settings);</code>
+			</p>
 			</div>
-			<div class="step4">
-			 <p><b>1.4</b> On next page, get your app keys from "Keys and Access Tokens" tab.</p>
-			 <img src="{{site.baseurl}}/assets/images/setup-4.jpg">
-			</div>
-			<div class="step5">
-			 <p><b>1.5</b> Generate your account access token by clicking "Create my access token" button.</p>
-			 <img src="{{site.baseurl}}/assets/images/setup-5.jpg">
-			</div>
-			<div class="step6">
-			 <p><b>1.6</b> Copy your access tokens as shown below.</p>
-			 <img src="{{site.baseurl}}/assets/images/setup-6.jpg">
-			</div>
-			<div class="step7">
-			 <strong>2 Environment setup:</strong>
-			 <p><b>2.1</b> On Windows:<br> Control Panel -> System and Security -> System -> Advanced system settings -> Environment variables -> New</p>
-			 <img src="{{site.baseurl}}/assets/images/window.jpg">
-			</div>
-			<div class="step8">
+			<div class="step2">
 			 <p><b>2.2</b> On Linux:<br></p>
 			 <code>
              vi /.bash_profile 
