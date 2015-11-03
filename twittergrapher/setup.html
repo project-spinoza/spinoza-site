@@ -19,67 +19,34 @@ title: Setup
 	</div>
 	<div class="row">
 		<div class="col-lg-12 page-setup">
-		    <article itemprop="mainContentOfPage" class="markdown-body entry-content"><h1><a aria-hidden="true" href="#twitter-grapher" class="anchor" id="user-content-twitter-grapher"><span class="octicon octicon-link"></span></a>Twitter Grapher</h1>
-
-<p>Twitter Grapher is an open source project for visualizing large data from multiple sources...<br></p>
-
-<h1><a aria-hidden="true" href="#installation" class="anchor" id="user-content-installation"><span class="octicon octicon-link"></span></a>Installation</h1>
-
-<p>Prerequisites</p>
-
-<ol>
-<li>Java 8<br></li>
-<li>Maven<br></li>
-</ol>
-
-<h1><a aria-hidden="true" href="#adding-dependencies" class="anchor" id="user-content-adding-dependencies"><span class="octicon octicon-link"></span></a>Adding dependencies</h1>
-
-<p>twitter-grapher have some dependencies, so before building the application you've to add them first.</p>
-
-<h4><a aria-hidden="true" href="#note" class="anchor" id="user-content-note"><span class="octicon octicon-link"></span></a>Note:</h4>
-
-<p>Clone the Project to directory whose path doesn't contain blank spaces.</p>
-
-<ol>
-<li>clone the twitter-grapher repository on your machine.<br>
-<code>git clone https://github.com/project-spinoza/twitter-grapher.git</code><br></li>
-<li><p>To add dependencies run the following commands from the root directory of twitter-grapher</p>
-<p><code>mvn install:install-file -Dfile=src/lib/gephi-toolkit.jar -DgroupId=gephi-toolkit -DartifactId=gephi-toolkit -Dversion=1.0 -Dpackaging=jar</code></p>
-<p><code>mvn install:install-file -Dfile=src/lib/gephi-cw.jar -DgroupId=gephi-cw -DartifactId=gephi-cw -Dversion=0.0.1 -Dpackaging=jar</code></p>
-<p><code>mvn install:install-file -Dfile=src/lib/uk-ac-ox-oii-sigmaexporter.jar -DgroupId=uk-ac-ox-oii-sigmaexporter -DartifactId=uk-ac-ox-oii-sigmaexporter -Dversion=1.0 -Dpackaging=jar</code></p></li>
-</ol>
-
-<h1><a aria-hidden="true" href="#how-to-build-the-application" class="anchor" id="user-content-how-to-build-the-application"><span class="octicon octicon-link"></span></a>How to build the application</h1>
-
-<ol>
-<li><p>navigate to the twitter-grapher directory and run the following command</p>
-<code>mvn clean compile package</code><br></li>
-</ol>
-
-<h1><a aria-hidden="true" href="#running-the-application" class="anchor" id="user-content-running-the-application"><span class="octicon octicon-link"></span></a>Running the application</h1>
-
-<h3><a aria-hidden="true" href="#running-at-the-command-line" class="anchor" id="user-content-running-at-the-command-line"><span class="octicon octicon-link"></span></a>Running at the command line</h3>
-
-<p>run the following command from the root directory</p>
-
-<p><code>java -jar target/twitter-grapher-v1.0-fat.jar -conf config.json</code></p>
-
-<h3><a aria-hidden="true" href="#running-in-your-ide-eclipse" class="anchor" id="user-content-running-in-your-ide-eclipse"><span class="octicon octicon-link"></span></a>Running in your IDE (Eclipse)</h3>
-
-<ol>
-<li>Import twitter-grapher project
-<p><code>File -&gt; Import -&gt; Existing Maven Projects</code></p></li>
-<li>Set Configuration file (<code>config.json</code>) located in the root directory
-<p>In IDE Navigate to <code>Run -&gt; Run Configurations</code> then select <code>Arguments</code> tab, In the <code>Program arguments</code> add the following:</p>
-<p><code>-conf config.json</code></p></li>
-<li><p>Run <code>com.tg.TwitterGrapher.java</code></p></li>
-</ol>
-
-<h3><a aria-hidden="true" href="#open-your-favorite-web-browser" class="anchor" id="user-content-open-your-favorite-web-browser"><span class="octicon octicon-link"></span></a>Open your favorite web browser</h3>
-
-<p>Navigate to <code>http://localhost:8080/graph</code></p>
-</article>
-
+		<p>Twitter Grapher is an open source project for visualizing large data from multiple sources.</p>
+			<div class="step1">
+				 <strong>Installation</strong>
+				 <p>Prerequisites</p>
+				 <ol>
+					<li>Java 8<br></li>
+					<li>Maven<br></li>
+				</ol>
+			</div>
+			<div class="step2">
+				 <strong>Adding dependencies</strong>
+				 <p>Twitter grapher have some dependencies, so before building the application you've to add them first.</p>
+				 <h4>Note:</h4>
+				 <p>Clone the Project to directory whose path doesn't contain blank spaces.</p>
+				 <ol>
+                    <li>clone the twitter-grapher repository on your machine.<br>
+                    <code>git clone https://github.com/project-spinoza/twitter-grapher.git</code><br></li>
+                    <li><p>To add dependencies run the following commands from the root directory of twitter-grapher</p>
+                    <p><code>mvn install:install-file -Dfile=src/lib/gephi-toolkit.jar -DgroupId=gephi-toolkit -DartifactId=gephi-toolkit -Dversion=1.0 -Dpackaging=jar</code></p>
+                    <p><code>mvn install:install-file -Dfile=src/lib/gephi-cw.jar -DgroupId=gephi-cw -DartifactId=gephi-cw -Dversion=0.0.1 -Dpackaging=jar</code></p>
+                    <p><code>mvn install:install-file -Dfile=src/lib/uk-ac-ox-oii-sigmaexporter.jar -DgroupId=uk-ac-ox-oii-sigmaexporter -DartifactId=uk-ac-ox-oii-sigmaexporter -Dversion=1.0 -Dpackaging=jar</code></p></li>
+                 </ol>
+		   </div>
+		   <div class="step3">
+				 <strong>How to build the application</strong>
+				 <p>navigate to the twitter-grapher directory and run the following command</p>
+				 <code>mvn clean compile package</code><br></li>
+		   </div>
 		</div>
 	</div>
 	
