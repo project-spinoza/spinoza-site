@@ -396,3 +396,11 @@ p.tableofcntnt{
 .page-setup{
 	padding-bottom:15px;
 }
+.navbar-brand a{
+	color: #337ab7;
+    text-decoration: none;
+}
+.navbar-brand a:focus, .navbar-brand a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
