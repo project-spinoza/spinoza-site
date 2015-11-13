@@ -404,3 +404,6 @@ p.tableofcntnt{
   color: #23527c !important;
   text-decoration: underline !important;
 }
+.twitter-grapher-setup ul{
+  list-style-type:disc;
+}
