@@ -1,6 +1,6 @@
 ---
 layout: ontology
-title: How to use?
+title: Running Ontology Example
 ---
 <div role="navigation" class="navbar-default sidebar">
   <div class="sidebar-nav navbar-collapse">
@@ -20,30 +20,30 @@ title: How to use?
 	<div class="row">
 		<div class="col-lg-12">
 		  <div class="page-setup">
-			<p>
-            <a href="http://onto.openspinoza.org" target="_blank">Ontology</a> is a collection of hierarchal data, collected from different sources. This data can be used for different purposes. Like analyzing tweets and against ontologies. Data is mainly categorized into following categories.
-			<ul>
-				<li>Car</li>
-				<li>Data science</li>
-				<li>Lifestyle</li>
-				<li>Newspaper</li>
-				<li>Politics</li>
-				<li>Sports team</li>
-			</ul>
-		  </p>
-		  <p>
-		  By navigating to the <a href="http://onto.openspinoza.org" target="_blank">Ontology</a> site the user can download the data in different formats.
-		  For example
-		  	<ul>
-				<li>CSV (Comma Separated Values)</li>
-				<li>JSON (JavaScript Object Notation)</li>
-				<li>XML (Extensible Markup Language)</li>
-				<li>SQL (Structured Query Language)</li>
-			</ul>
-		 After downloading the data in one of the above format, it will contain information like Title, Url of image, Tag, body(description), Url of Homepage, 
-		 Url of Twitter, Url of Wikipedia, Url of Pinterest, Url of Google Plus, Url of Linkedin, Url of Foursquare, Url of Forums,
-		 Url of Other Links and Parent(Name of the parent category).
-		  </p>
+		  	<div class="step1">
+				 <strong>Cloning Ontology example project</strong>
+                 <p>Clone the Ontology repository on your machine</p>
+				 <code>git clone https://github.com/project-spinoza/ontology.git</code>
+			</div>
+			<div class="step2">
+				 <strong>How to build the application</strong>
+                 <p>Navigate to the ontology directory and run the following command</p>
+				 <code>mvn clean compile package</code>
+			</div>
+			<div class="step3">
+				 <strong>Run the following command from the root directory</strong>
+                 <p>Navigate to the ontology directory and run the following command</p>
+				 <code>java -jar target/ontology-v1.0-fat.jar tweets.txt ontologies.json</code>
+			</div>
+			<div class="step3">
+				 <strong>Running the application</strong>
+                 <p>Navigate to the ontology directory and run the following command</p>
+				 <code>java -jar target/ontology-v1.0-fat.jar tweets.txt ontologies.json</code>
+			</div>
+			<div class="step4">
+				 <strong>Result</strong>
+                 <p>The final result will be stored in <code>result.txt</code> file, at root directory of project </p>
+			</div>
 		  </div>
 		</div>
 	</div>
