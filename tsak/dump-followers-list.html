@@ -43,38 +43,27 @@ title: Dump Followers List
 
 					<p class="ftnnames" id="1">Dump by Twitter Screen Name:</p>
 					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpFollowersList -uname screenname -o followers.txt
-						</code>
-					</div>
-
-					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowersList -uname screenname -o followers.txt
+							tsak dumpFollowersList -uname screenname -limit -o followers.txt
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
 						<h4>Arguments:</h4>
 
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
-
 						<h4>-uname:</h4>
 						<p>The screen_name of the user for whom to return results for.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the Result Users will be dumped.</p>
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>This command dumps a collection of users that the specified user is followed by (otherwise known as their “followers”).</p>
@@ -84,37 +73,28 @@ title: Dump Followers List
 					<br><br><br>
 
 					<p class="ftnnames" id="2">Dump by Twitter ID:</p>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpFollowersList -uid 010101 -o followers.txt
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowersList -uid 010101 -o followers.txt
+							java -jar TSAK.jar tsak dumpFollowersList -uid 010101 -limit 1 -o followers.txt
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-uid:</h4>
 						<p>The ID of the user for whom to return results for.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the Result Users will be dumped.</p>
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>This command dumps a collection of users that the specified user is followed by (otherwise known as their “followers”).The number of Users to be retrieved, are subjected to Twitter rate limits.</p>
