@@ -24,18 +24,9 @@ title: Dump Account Setting
 				<div class="quicklinks">
 					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dump-account-setting">Dump Account Setting</a>
 				</div>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX tsak dumpAccountSettings -o accountSettings.txt
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
@@ -48,9 +39,6 @@ title: Dump Account Setting
 					
 					<div class="ftns_desp">
 						<h4>Arguments:</h4>
-
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the result will be dumped.</p>
