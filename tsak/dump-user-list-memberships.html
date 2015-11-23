@@ -42,39 +42,30 @@ title: Dump User List Memberships
 
 
 					<p class="ftnnames" id="1">Dump by Twitter Screen Name:</p>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpUserListMemberships -uname screenName -o memberships.txt
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpUserListMemberships -uname screenName -o memberships.txt
+							tsak dumpUserListMemberships -uname screenName -limit 1 -o memberships.txt
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
 						<h4>Arguments:</h4>
 
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
-
 						<h4>-uname:</h4>
 						<p>Screen name of the user who has membership in twitter lists.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the twitter Lists will be dumped.</p>
+						
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>This command dumps twitter lists  to the given output file, in which the specified user has been added. The number of the retrieved twitter lists is subjected to twitter rate limit status.</p>
@@ -84,37 +75,28 @@ title: Dump User List Memberships
 					<br><br><br>
 
 					<p class="ftnnames" id="2">Dump by Twitter ID:</p>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpUserListMemberships -uid 010101 -o memberships.txt
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpUserListMemberships -uid 010101 -o memberships.txt
+							tsak dumpUserListMemberships -uid 010101 -limit 1 -o memberships.txt
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
 						<h4>-uid:</h4>
 						<p>Numeric ID of the user who has membership in twitter lists.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the List Memebership users will be dumped.</p>
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>This command dumps twitter lists  to the given output file, in which the specified user has been added. The number of the retrieved twitter lists is subjected to twitter rate limit status.</p>
