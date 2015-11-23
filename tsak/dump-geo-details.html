@@ -24,33 +24,21 @@ title: Dump Geo Details
 				<div class="quicklinks">
 					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dump-geo-details">Dump Geo Details</a>
 				</div>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpGeoDetails -pid 00685eca27fbd26b -o ginfo.txt
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpGeoDetails -pid 00685eca27fbd26b -o ginfo.txt
+							tsak dumpGeoDetails -pid 00685eca27fbd26b -o ginfo.txt
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
 						<h4>Arguments:</h4>
-
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-pid:</h4>
 						<p>Place ID, for which the geo details will be returned.</p>
