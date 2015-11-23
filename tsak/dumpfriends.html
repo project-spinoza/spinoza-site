@@ -43,39 +43,29 @@ title: Dump Friends IDs
 
 
 					<p class="ftnnames" id="1">Dump by Twitter Screen Name:</p>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o friends.csv
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o friends.csv
+							tsak dumpFriendIDs -uname ScreenName -limit 1 -o friends.csv
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
 						<h4>Arguments:</h4>
 
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
-
 						<h4>-uname:</h4>
 						<p>Target User's Twitter ScreenName.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the target user's friends will be dumped.</p>
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>This command dumps a valid twitter user's friends IDs, screen name, followers count, and friends count to the given output file. The number of friends IDs are subjected to Twitter rate limits.</p>
@@ -85,38 +75,28 @@ title: Dump Friends IDs
 					<br><br><br>
 
 					<p class="ftnnames" id="2">Dump by Twitter ID:</p>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uid 01010101 -o friends.csv
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFriendIDs -uid 01010101 -o friends.csv
+							tsak dumpFriendIDs -uid 01010101 -limit 1 -o friends.csv
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
 
 						<h4>-uid:</h4>
 						<p>Target User's Twitter ID.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the target user follower will be dumped.</p>
-
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 						<h4>Description:</h4>
 						<p>This command dumps a valid twitter user's friends IDs, screen name, followers count, and friends count to the given output file. The number of friends IDs are subjected to Twitter rate limits.</p>
 					</div>
