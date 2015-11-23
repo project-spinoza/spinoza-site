@@ -24,39 +24,29 @@ title: Dump User List Subscriptions
 				<div class="quicklinks">
 					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dump-user-list-subscriptions">Dump User List Subscriptions</a>
 				</div>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpUserListSubscriptions -uname screenName -o subscription.txt
-						</code>
-					</div>
 
 					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
+						<h4>FORMAT</h4>
 						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
 					</div>
 
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpUserListSubscriptions -uname screenName -o subscription.txt
+							tsak dumpUserListSubscriptions -uname screenName -limit 1 -o subscription.txt
 						</code>
 					</div>
 					
 					<div class="ftns_desp">
 						<h4>Arguments:</h4>
 
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <a href="setup">SETUP</a> page to see how to generate these four keys.</p>
-
 						<h4>-uname:</h4>
 						<p>Screen name of a valid twitter user.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the List Memebership users will be dumped.</p>
+						<h4>-limit:</h4>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>This command dumps a collection of the lists to the given ouput file, in which the specified user is subscribed to. Other than user’s own lists. The number of retrieved twitter lists are subjected to Twitter rate limits.</p>
