@@ -33,7 +33,7 @@ title: Dump Account Setting
 					<div class="ftns_def">
 						
 						<code>
-							TSAK.jar tsak dumpAccountSettings -o -limit accountSettings.txt
+							tsak dumpAccountSettings -limit 1 -o accountSettings.txt
 						</code>
 					</div>
 					
@@ -43,7 +43,7 @@ title: Dump Account Setting
 						<h4>-o:</h4>
 						<p>Name of the output file to which the result will be dumped.</p>
 						<h4>-limit:</h4>
-						<p>Represents limit default value is 1.</p>
+						<p>Represents API limits for the above command and it has a default value 1. This argument is optional.</p>
 
 						<h4>Description:</h4>
 						<p>Based on provided credentials, this command will dump all of the account properties and settings the authenticating user to provided output file.</p>
